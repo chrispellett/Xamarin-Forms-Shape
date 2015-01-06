@@ -1,0 +1,1 @@
+This sample shows how to draw more complex shapes in Xamarin.Forms that is not limited to a simple BoxView (and only a single colour). The new examples are Circle, Rectangle and a "Circle Indicator" (which is a fancy way of saying a two stroke width circle where the thicker bit shows the progress out of 100%).

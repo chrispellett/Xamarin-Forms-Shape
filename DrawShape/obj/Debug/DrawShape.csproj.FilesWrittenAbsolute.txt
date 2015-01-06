@@ -1,0 +1,7 @@
+/Users/chris/Documents/Custom/Xamarin.Forms.Controls/DrawShape/DrawShape/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/chris/Documents/Custom/Xamarin.Forms.Controls/DrawShape/DrawShape/bin/Debug/Xamarin.Forms.Core.dll
+/Users/chris/Documents/Custom/Xamarin.Forms.Controls/DrawShape/DrawShape/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/chris/Documents/Custom/Xamarin.Forms.Controls/DrawShape/DrawShape/bin/Debug/DrawShape.dll.mdb
+/Users/chris/Documents/Custom/Xamarin.Forms.Controls/DrawShape/DrawShape/bin/Debug/DrawShape.dll
+/Users/chris/Documents/Custom/Xamarin.Forms.Controls/DrawShape/DrawShape/obj/Debug/DrawShape.dll
+/Users/chris/Documents/Custom/Xamarin.Forms.Controls/DrawShape/DrawShape/obj/Debug/DrawShape.dll.mdb
