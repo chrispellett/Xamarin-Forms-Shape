@@ -40,6 +40,13 @@ namespace DrawShape.iOS
 			}
 		}
 
+		/// <summary>
+		/// A simple method for handling our drawing of the shape. This method is called differently for each type of shape
+		/// </summary>
+		/// <param name="currentContext">Current context.</param>
+		/// <param name="rect">Rect.</param>
+		/// <param name="createPathForShape">Create path for shape.</param>
+		/// <param name="lineWidth">Line width.</param>
 		protected virtual void HandleStandardDraw (CGContext currentContext, RectangleF rect, Action createPathForShape, float? lineWidth = null)
 		{
 			currentContext.SetLineWidth (lineWidth ?? Element.StrokeWidth);

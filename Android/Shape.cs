@@ -7,6 +7,9 @@ using Android.Util;
 
 namespace DrawShape.Android
 {
+	/// <summary>
+	/// This is our class responsible for drawing our shapes
+	/// </summary>
 	public class Shape : View
 	{
 		private readonly float QuarterTurnCounterClockwise = -90;
@@ -43,12 +46,17 @@ namespace DrawShape.Android
 			case ShapeType.CircleIndicator:
 				HandleStandardDraw (canvas, p => canvas.DrawCircle (this.GetX () + this.Width / 2, this.GetY () + this.Height / 2, (this.Width - 10) / 2, p), drawFill: false);
 				HandleStandardDraw (canvas, p => canvas.DrawArc (new RectF (this.GetX (), this.GetY (), this.GetX () + this.Width, this.GetY () + this.Height), QuarterTurnCounterClockwise, 360 * (ShapeView.IndicatorPercentage / 100), false, p), ShapeView.StrokeWidth + 3, false);
-				//				HandleStandardDraw (currentContext, rect, () => currentContext.AddArc (rect.Width / 2, rect.Height / 2, (rect.Width - 10) / 2, 0, (float)(Math.PI * 2), true));
-				//				HandleStandardDraw (currentContext, rect, () => currentContext.AddArc (rect.Width / 2, rect.Height / 2, (rect.Width - 10) / 2, QuarterTurnCounterClockwise, (float)(Math.PI * 2 * (Element.IndicatorPercentage / 100)) + QuarterTurnCounterClockwise, false), Element.StrokeWidth + 3);
 				break;
 			}
 		}
 
+		/// <summary>
+		/// A simple method that handles drawing our shape with the various colours we need
+		/// </summary>
+		/// <param name="canvas">Canvas.</param>
+		/// <param name="drawShape">Draw shape.</param>
+		/// <param name="lineWidth">Line width.</param>
+		/// <param name="drawFill">If set to <c>true</c> draw fill.</param>
 		protected virtual void HandleStandardDraw (Canvas canvas, Action<Paint> drawShape, float? lineWidth = null, bool drawFill = true)
 		{
 			var strokePaint = new Paint (PaintFlags.AntiAlias);
