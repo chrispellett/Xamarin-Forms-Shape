@@ -25,3 +25,5 @@ System.Diagnostics.Debug.dll
 System.Net.Http.dll
 System.Runtime.Serialization.dll
 DrawShape.dll
+Xamarin.Forms.Xaml.dll
+System.Text.RegularExpressions.dll

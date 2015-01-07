@@ -1,0 +1,37 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Android/Shape.cs">
+    <Files>
+      <File FileName="Android/ShapeRenderer.cs" Line="4" Column="4" />
+      <File FileName="Android/Shape.cs" Line="86" Column="86" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="DrawShape" expanded="True">
+            <Node name="Packages" expanded="True" />
+          </Node>
+          <Node name="DrawShape.Android" expanded="True">
+            <Node name="Packages" expanded="True" />
+            <Node name="Shape.cs" selected="True" />
+          </Node>
+          <Node name="DrawShape.iOS" expanded="True">
+            <Node name="References" expanded="True">
+              <Node name="From Packages" expanded="True" />
+            </Node>
+            <Node name="Packages" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>barButtonItem.CustomView</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
