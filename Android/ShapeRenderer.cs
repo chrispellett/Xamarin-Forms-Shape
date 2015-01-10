@@ -21,10 +21,9 @@ namespace DrawShape.Android
 			if (e.OldElement != null || this.Element == null)
 				return;
 
-			SetNativeControl (new Shape (Context) {
+			SetNativeControl (new Shape (Resources.DisplayMetrics.Density, Context) {
 				ShapeView = Element
 			});
 		}
-
 	}
 }

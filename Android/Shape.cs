@@ -16,16 +16,31 @@ namespace DrawShape.Android
 
 		public ShapeView ShapeView{ get; set; }
 
-		public Shape (Context context) : base (context)
-		{
+		// Pixel density
+		private readonly float density;
+
+		// We need to make sure we account for the padding changes
+		public new int Width {
+			get { return base.Width - (int)(Resize (this.ShapeView.Padding.HorizontalThickness)); }
 		}
 
-		public Shape (Context context, IAttributeSet attributes) : base (context, attributes)
-		{
+		public new int Height {
+			get{ return base.Height - (int)(Resize (this.ShapeView.Padding.VerticalThickness)); }
 		}
 
-		public Shape (Context context, IAttributeSet attributes, int defStyle) : base (context, attributes, defStyle)
+		public Shape (float density, Context context) : base (context)
 		{
+			this.density = density;
+		}
+
+		public Shape (float density, Context context, IAttributeSet attributes) : base (context, attributes)
+		{
+			this.density = density;
+		}
+
+		public Shape (float density, Context context, IAttributeSet attributes, int defStyle) : base (context, attributes, defStyle)
+		{
+			this.density = density;
 		}
 
 		protected override void OnDraw (Canvas canvas)
@@ -36,16 +51,28 @@ namespace DrawShape.Android
 
 		protected virtual void HandleShapeDraw (Canvas canvas)
 		{
+			// We need to account for offsetting the coordinates based on the padding
+			var x = GetX () + Resize (this.ShapeView.Padding.Left);
+			var y = GetY () + Resize (this.ShapeView.Padding.Top);
+
 			switch (ShapeView.ShapeType) {
 			case ShapeType.Box:
-				HandleStandardDraw (canvas, p => canvas.DrawRect (this.GetX (), this.GetY (), this.GetX () + this.Width, this.GetY () + this.Height, p));
+				HandleStandardDraw (canvas, p => {
+					var rect = new RectF (x, y, x + this.Width, y + this.Height);
+					if (ShapeView.CornerRadius > 0) {
+						var cr = Resize (ShapeView.CornerRadius);
+						canvas.DrawRoundRect (rect, cr, cr, p);
+					} else {
+						canvas.DrawRect (rect, p);
+					}
+				});
 				break;
 			case ShapeType.Circle:
-				HandleStandardDraw (canvas, p => canvas.DrawCircle (this.GetX () + this.Width / 2, this.GetY () + this.Height / 2, (this.Width - 10) / 2, p));
+				HandleStandardDraw (canvas, p => canvas.DrawCircle (x + this.Width / 2, y + this.Height / 2, (this.Width - 10) / 2, p));
 				break;
 			case ShapeType.CircleIndicator:
-				HandleStandardDraw (canvas, p => canvas.DrawCircle (this.GetX () + this.Width / 2, this.GetY () + this.Height / 2, (this.Width - 10) / 2, p), drawFill: false);
-				HandleStandardDraw (canvas, p => canvas.DrawArc (new RectF (this.GetX (), this.GetY (), this.GetX () + this.Width, this.GetY () + this.Height), QuarterTurnCounterClockwise, 360 * (ShapeView.IndicatorPercentage / 100), false, p), ShapeView.StrokeWidth + 3, false);
+				HandleStandardDraw (canvas, p => canvas.DrawCircle (x + this.Width / 2, y + this.Height / 2, (this.Width - 10) / 2, p), drawFill: false);
+				HandleStandardDraw (canvas, p => canvas.DrawArc (new RectF (x, y, x + this.Width, y + this.Height), QuarterTurnCounterClockwise, 360 * (ShapeView.IndicatorPercentage / 100), false, p), ShapeView.StrokeWidth + 3, false);
 				break;
 			}
 		}
@@ -61,7 +88,7 @@ namespace DrawShape.Android
 		{
 			var strokePaint = new Paint (PaintFlags.AntiAlias);
 			strokePaint.SetStyle (Paint.Style.Stroke);
-			strokePaint.StrokeWidth = lineWidth ?? ShapeView.StrokeWidth;
+			strokePaint.StrokeWidth = Resize (lineWidth ?? ShapeView.StrokeWidth);
 			strokePaint.StrokeCap = Paint.Cap.Round;
 			strokePaint.Color = ShapeView.StrokeColor.ToAndroid ();
 			var fillPaint = new Paint ();
@@ -71,6 +98,17 @@ namespace DrawShape.Android
 			if (drawFill)
 				drawShape (fillPaint);
 			drawShape (strokePaint);
+		}
+
+		// Helper functions for dealing with pizel density
+		private float Resize (float input)
+		{
+			return input * density;
+		}
+
+		private float Resize (double input)
+		{
+			return Resize ((float)input);
 		}
 	}
 }

@@ -21,21 +21,45 @@ namespace DrawShape.iOS
 		public override void Draw (System.Drawing.RectangleF rect)
 		{
 			var currentContext = UIGraphics.GetCurrentContext ();
-			HandleShapeDraw (currentContext, rect);
+			var properRect = AdjustForThickness (rect);
+			HandleShapeDraw (currentContext, properRect);
+		}
+
+		protected RectangleF AdjustForThickness (RectangleF rect)
+		{
+			var x = rect.X + Element.Padding.Left;
+			var y = rect.Y + Element.Padding.Top;
+			var width = rect.Width - Element.Padding.HorizontalThickness;
+			var height = rect.Height - Element.Padding.VerticalThickness;
+			return new RectangleF ((float)x, (float)y, (float)width, (float)height);
 		}
 
 		protected virtual void HandleShapeDraw (CGContext currentContext, RectangleF rect)
 		{
+			// Only used for circles
+			var centerX = rect.X + (rect.Width / 2);
+			var centerY = rect.Y + (rect.Height / 2);
+			var radius = rect.Width / 2;
+			var startAngle = 0;
+			var endAngle = (float)(Math.PI * 2);
+
 			switch (Element.ShapeType) {
 			case ShapeType.Box:
-				HandleStandardDraw (currentContext, rect, () => currentContext.AddRect (rect));
+				HandleStandardDraw (currentContext, rect, () => {
+					if (Element.CornerRadius > 0) {
+						var path = UIBezierPath.FromRoundedRect (rect, Element.CornerRadius);
+						currentContext.AddPath (path.CGPath);
+					} else {
+						currentContext.AddRect (rect);
+					}
+				});
 				break;
 			case ShapeType.Circle:
-				HandleStandardDraw (currentContext, rect, () => currentContext.AddArc (rect.Width / 2, rect.Height / 2, (rect.Width - 10) / 2, 0, (float)(Math.PI * 2), true));
+				HandleStandardDraw (currentContext, rect, () => currentContext.AddArc (centerX, centerY, radius, startAngle, endAngle, true));
 				break;
 			case ShapeType.CircleIndicator:
-				HandleStandardDraw (currentContext, rect, () => currentContext.AddArc (rect.Width / 2, rect.Height / 2, (rect.Width - 10) / 2, 0, (float)(Math.PI * 2), true));
-				HandleStandardDraw (currentContext, rect, () => currentContext.AddArc (rect.Width / 2, rect.Height / 2, (rect.Width - 10) / 2, QuarterTurnCounterClockwise, (float)(Math.PI * 2 * (Element.IndicatorPercentage / 100)) + QuarterTurnCounterClockwise, false), Element.StrokeWidth + 3);
+				HandleStandardDraw (currentContext, rect, () => currentContext.AddArc (centerX, centerY, radius, startAngle, endAngle, true));
+				HandleStandardDraw (currentContext, rect, () => currentContext.AddArc (centerX, centerY, radius, QuarterTurnCounterClockwise, (float)(Math.PI * 2 * (Element.IndicatorPercentage / 100)) + QuarterTurnCounterClockwise, false), Element.StrokeWidth + 3);
 				break;
 			}
 		}

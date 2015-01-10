@@ -1,6 +1,41 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DrawShape.SamplePage" xmlns:controls="clr-namespace:DrawShape;assembly=DrawShape">
 	<ContentPage.Content>
-		<controls:ShapeView ShapeType="Circle" StrokeColor="#000000" />
+		<TableView WidthRequest="50" RowHeight="50" HorizontalOptions="Center">
+			<TableView.Root>
+				<TableSection>
+					<ViewCell>
+						<ViewCell.View>
+							<controls:ShapeView ShapeType="Circle" StrokeColor="#000000" Padding="5" />
+						</ViewCell.View>
+					</ViewCell>
+					<ViewCell>
+						<ViewCell.View>
+							<controls:ShapeView ShapeType="Box" StrokeColor="#6633FF" Padding="5" />
+						</ViewCell.View>
+					</ViewCell>
+					<ViewCell>
+						<ViewCell.View>
+							<controls:ShapeView ShapeType="Box" CornerRadius="6" StrokeColor="#CC3300" Padding="5" />
+						</ViewCell.View>
+					</ViewCell>
+					<ViewCell>
+						<ViewCell.View>
+							<controls:ShapeView ShapeType="CircleIndicator" IndicatorPercentage="33" StrokeColor="#CC3300" Padding="5" />
+						</ViewCell.View>
+					</ViewCell>
+					<ViewCell>
+						<ViewCell.View>
+							<controls:ShapeView ShapeType="Box" StrokeColor="#3366FF" Color="#BBBBBB" Padding="5" />
+						</ViewCell.View>
+					</ViewCell>
+					<ViewCell>
+						<ViewCell.View>
+							<controls:ShapeView ShapeType="Circle" StrokeColor="#333333" Color="#99FF33" Padding="5" />
+						</ViewCell.View>
+					</ViewCell>
+				</TableSection>
+			</TableView.Root>
+		</TableView>
 	</ContentPage.Content>
 </ContentPage>
