@@ -16,6 +16,7 @@ namespace DrawShape.iOS
 
 		public ShapeRenderer ()
 		{
+			ContentMode = UIViewContentMode.Redraw;
 		}
 
 		public override void Draw (System.Drawing.RectangleF rect)
