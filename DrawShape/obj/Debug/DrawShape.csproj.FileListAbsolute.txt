@@ -1,0 +1,14 @@
+C:\Users\cassio.citadin\GitHubProjects\Xamarin-Forms-Shape\DrawShape\bin\Debug\DrawShape.dll
+C:\Users\cassio.citadin\GitHubProjects\Xamarin-Forms-Shape\DrawShape\bin\Debug\DrawShape.pdb
+C:\Users\cassio.citadin\GitHubProjects\Xamarin-Forms-Shape\DrawShape\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\cassio.citadin\GitHubProjects\Xamarin-Forms-Shape\DrawShape\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\cassio.citadin\GitHubProjects\Xamarin-Forms-Shape\DrawShape\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\cassio.citadin\GitHubProjects\Xamarin-Forms-Shape\DrawShape\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\cassio.citadin\GitHubProjects\Xamarin-Forms-Shape\DrawShape\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\cassio.citadin\GitHubProjects\Xamarin-Forms-Shape\DrawShape\obj\Debug\DrawShape.SamplePage.xaml.g.cs
+C:\Users\cassio.citadin\GitHubProjects\Xamarin-Forms-Shape\DrawShape\obj\Debug\DrawShape.dll
+C:\Users\cassio.citadin\GitHubProjects\Xamarin-Forms-Shape\DrawShape\obj\Debug\DrawShape.pdb
+C:\Users\cassio.citadin\GitHubProjects\Xamarin-Forms-Shape\DrawShape\obj\Debug\DrawShape.dll.mdb
+C:\Users\cassio.citadin\GitHubProjects\Xamarin-Forms-Shape\DrawShape\bin\Debug\DrawShape.dll.mdb
+C:\Users\cassio.citadin\GitHubProjects\Xamarin-Forms-Shape\DrawShape\obj\Debug\DrawShape.dll.mdb
+C:\Users\cassio.citadin\GitHubProjects\Xamarin-Forms-Shape\DrawShape\bin\Debug\DrawShape.dll.mdb
