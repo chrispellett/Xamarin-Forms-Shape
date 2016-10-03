@@ -1,15 +1,16 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using Foundation;
+using UIKit;
 
 using Xamarin.Forms;
 
 namespace DrawShape.iOS
 {
-	[Register ("AppDelegate")]
+	[Foundation.Register("AppDelegate")]
 	public partial class AppDelegate : UIApplicationDelegate
 	{
 		UIWindow window;
@@ -18,7 +19,7 @@ namespace DrawShape.iOS
 		{
 			Forms.Init ();
 
-			window = new UIWindow (UIScreen.MainScreen.Bounds);
+			window = new UIWindow ((RectangleF)UIScreen.MainScreen.Bounds);
 			
 			window.RootViewController = App.GetMainPage ().CreateViewController ();
 			window.MakeKeyAndVisible ();
