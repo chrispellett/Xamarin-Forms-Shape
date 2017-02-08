@@ -3,8 +3,13 @@ using Xamarin.Forms;
 
 namespace DrawShape
 {
-	public class App
+	public class App : Application
 	{
+        public App()
+        {
+            MainPage = new SamplePage();
+        }
+
 		public static Page GetMainPage ()
 		{	
 			// XAML sample

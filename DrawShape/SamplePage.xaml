@@ -5,34 +5,22 @@
 			<TableView.Root>
 				<TableSection>
 					<ViewCell>
-						<ViewCell.View>
 							<controls:ShapeView ShapeType="Circle" StrokeColor="#FF0000" Padding="5" />
-						</ViewCell.View>
 					</ViewCell>
 					<ViewCell>
-						<ViewCell.View>
 							<controls:ShapeView ShapeType="Box" StrokeColor="#6633FF" Padding="5" />
-						</ViewCell.View>
 					</ViewCell>
 					<ViewCell>
-						<ViewCell.View>
 							<controls:ShapeView ShapeType="Box" CornerRadius="6" StrokeColor="#CC3300" Padding="5" />
-						</ViewCell.View>
 					</ViewCell>
 					<ViewCell>
-						<ViewCell.View>
 							<controls:ShapeView ShapeType="CircleIndicator" IndicatorPercentage="33" StrokeColor="#CC3300" Padding="5" />
-						</ViewCell.View>
 					</ViewCell>
 					<ViewCell>
-						<ViewCell.View>
 							<controls:ShapeView ShapeType="Box" StrokeColor="#3366FF" Color="#BBBBBB" Padding="5" />
-						</ViewCell.View>
 					</ViewCell>
 					<ViewCell>
-						<ViewCell.View>
 							<controls:ShapeView ShapeType="Circle" StrokeColor="#333333" Color="#99FF33" Padding="5" />
-						</ViewCell.View>
 					</ViewCell>
 				</TableSection>
 			</TableView.Root>

@@ -21,3 +21,8 @@ Properties supported by the various shapes:
 
 ![Image for iOS]
 (https://raw.githubusercontent.com/chrispellett/Xamarin-Forms-Shape/master/Screenshots/iOS.png)
+
+### Windows (Box & circle)
+
+![Image for Windows Phone]
+(https://raw.githubusercontent.com/chrispellett/Xamarin-Forms-Shape/master/Screenshots/WinPhone.png)
