@@ -4,99 +4,104 @@
     </assembly>
     <members>
         <member name="T:Xamarin.Forms.Xaml.ArrayExtension">
-            <summary>Markup extension for parsing arrays.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="C:Xamarin.Forms.Xaml.ArrayExtension">
-            <summary>Creates a new <see cref="T:Xamarin.Forms.ArrayExtension" /> with default values.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.Xaml.ArrayExtension.Items">
-            <summary>Returns a list of the items in this <see cref="T:Xamarin.Forms.Xaml.ArrayExtension" />.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Xaml.ArrayExtension.ProvideValue(System.IServiceProvider)">
             <param name="serviceProvider">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Xaml.ArrayExtension.ProvideValue(System.IServiceProvider)">
             <param name="serviceProvider">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Xaml.ArrayExtension.ProvideValue(System.IServiceProvider)">
             <param name="serviceProvider">To be added.</param>
-            <summary>Returns an array that contains items of the type that is specified by the <see cref="P:Xamarin.Forms.Xaml.ArrayExtension.Type" /> property.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.Xaml.ArrayExtension.Type">
-            <summary>Gets or sets the type of the items that can be stored in the array.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Xaml.ArrayExtension.Xamarin#Forms#Xaml#IMarkupExtension#ProvideValue(System.IServiceProvider)">
             <param name="serviceProvider">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.Xaml.BindingExtension">
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="C:Xamarin.Forms.Xaml.BindingExtension">
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.Xaml.BindingExtension.Converter">
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.Xaml.BindingExtension.ConverterParameter">
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.Xaml.BindingExtension.Mode">
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.Xaml.BindingExtension.Path">
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.Xaml.BindingExtension.Source">
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.Xaml.BindingExtension.StringFormat">
+            <summary>For internal use by the XAML infrastructure.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.Xaml.BindingExtension.UpdateSourceEventName">
             <summary>To be added.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Xaml.BindingExtension.Xamarin#Forms#Xaml#IMarkupExtension#ProvideValue(System.IServiceProvider)">
             <param name="serviceProvider">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Xaml.BindingExtension.Xamarin#Forms#Xaml#IMarkupExtension{Xamarin#Forms#BindingBase}#ProvideValue(System.IServiceProvider)">
             <param name="serviceProvider">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.Xaml.DynamicResourceExtension">
-            <summary>Internal.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="C:Xamarin.Forms.Xaml.DynamicResourceExtension">
@@ -104,25 +109,25 @@
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.Xaml.DynamicResourceExtension.Key">
-            <summary>Internal.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Xaml.DynamicResourceExtension.ProvideValue(System.IServiceProvider)">
             <param name="serviceProvider">To be added.</param>
-            <summary>Internal.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Xaml.DynamicResourceExtension.Xamarin#Forms#Xaml#IMarkupExtension{Xamarin#Forms#DynamicResource}#ProvideValue(System.IServiceProvider)">
             <param name="serviceProvider">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Xaml.DynamicResourceExtension.Xamarin#Forms#Xaml#IMarkupExtension{Xamarin#Forms#Internals#DynamicResource}#ProvideValue(System.IServiceProvider)">
             <param name="serviceProvider">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
@@ -131,10 +136,18 @@
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Xaml.Extensions.LoadFromXaml``1(``0,System.Type)">
-            <typeparam name="TView">To be added.</typeparam>
+            <typeparam name="TXaml">To be added.</typeparam>
             <param name="view">To be added.</param>
             <param name="callingType">To be added.</param>
             <summary>Configures <paramref name="view" /> with the properties that are defined in the application manifest for <paramref name="callingType" />.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Forms.Xaml.Extensions.LoadFromXaml``1(``0,System.Type)">
+            <typeparam name="TXaml">To be added.</typeparam>
+            <param name="view">To be added.</param>
+            <param name="callingType">To be added.</param>
+            <summary>To be added.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
@@ -191,97 +204,97 @@
             <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.Xaml.StaticResourceExtension">
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="C:Xamarin.Forms.Xaml.StaticResourceExtension">
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.Xaml.StaticResourceExtension.Key">
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Xaml.StaticResourceExtension.ProvideValue(System.IServiceProvider)">
             <param name="serviceProvider">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.Xaml.TemplateBindingExtension">
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="C:Xamarin.Forms.Xaml.TemplateBindingExtension">
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.Xaml.TemplateBindingExtension.Converter">
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.Xaml.TemplateBindingExtension.ConverterParameter">
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.Xaml.TemplateBindingExtension.Mode">
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.Xaml.TemplateBindingExtension.Path">
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.Xaml.TemplateBindingExtension.StringFormat">
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Xaml.TemplateBindingExtension.Xamarin#Forms#Xaml#IMarkupExtension#ProvideValue(System.IServiceProvider)">
             <param name="serviceProvider">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Xaml.TemplateBindingExtension.Xamarin#Forms#Xaml#IMarkupExtension{Xamarin#Forms#BindingBase}#ProvideValue(System.IServiceProvider)">
             <param name="serviceProvider">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="T:Xamarin.Forms.Xaml.TypeExtension">
-            <summary>A markup extension for parsing type descriptors.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="C:Xamarin.Forms.Xaml.TypeExtension">
-            <summary>Creates a new <see cref="T:Xamarin.Forms.Xaml.TypeExtension" /> object with default values.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Xaml.TypeExtension.ProvideValue(System.IServiceProvider)">
             <param name="serviceProvider">To be added.</param>
-            <summary>Returns an object that represents the type specified by the markup.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Xaml.TypeExtension.ProvideValue(System.IServiceProvider)">
             <param name="serviceProvider">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.Xaml.TypeExtension.TypeName">
-            <summary>Gets or sets the name of the type.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="M:Xamarin.Forms.Xaml.TypeExtension.Xamarin#Forms#Xaml#IMarkupExtension#ProvideValue(System.IServiceProvider)">
             <param name="serviceProvider">To be added.</param>
-            <summary>To be added.</summary>
+            <summary>For internal use by the XAML infrastructure.</summary>
             <returns>To be added.</returns>
             <remarks>To be added.</remarks>
         </member>
@@ -364,12 +377,27 @@
             <summary>To be added.</summary>
             <remarks>To be added.</remarks>
         </member>
+        <member name="C:Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider(System.Object[],System.Object)">
+            <param name="objectAndParents">To be added.</param>
+            <param name="targetProperty">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
         <member name="P:Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider.Xamarin#Forms#Xaml#IProvideValueTarget#TargetObject">
             <summary>To be added.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
         </member>
         <member name="P:Xamarin.Forms.Xaml.Internals.SimpleValueTargetProvider.Xamarin#Forms#Xaml#IProvideValueTarget#TargetProperty">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Forms.Xaml.Internals.XamlLoader">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Forms.Xaml.Internals.XamlLoader.XamlFileProvider">
             <summary>To be added.</summary>
             <value>To be added.</value>
             <remarks>To be added.</remarks>
