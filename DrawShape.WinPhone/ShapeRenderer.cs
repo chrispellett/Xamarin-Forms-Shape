@@ -27,6 +27,7 @@ namespace DrawShape.WinPhone
 
             var color = (SolidColorBrush)converter.Convert(Element.Color, null, null, null);
             var strockColor = (SolidColorBrush)converter.Convert(Element.StrokeColor, null, null, null);
+            var margin = new Thickness(Element.Padding.Left, Element.Padding.Top, Element.Padding.Right, Element.Padding.Bottom);
             switch (Element.ShapeType)
             {
                 case ShapeType.Box:
@@ -35,7 +36,7 @@ namespace DrawShape.WinPhone
                         Fill = color,
                         Stroke = strockColor,
                         StrokeThickness = Element.StrokeWidth,
-                        Margin = new Thickness(Element.Padding.HorizontalThickness),
+                        Margin = margin,
                         RadiusX = Element.CornerRadius,
                         RadiusY = Element.CornerRadius,
                     };
@@ -47,7 +48,7 @@ namespace DrawShape.WinPhone
                         Fill = color,
                         Stroke = strockColor,
                         StrokeThickness = Element.StrokeWidth,
-                        Margin = new Thickness(Element.Padding.HorizontalThickness)
+                        Margin = margin
                     };
                     SetNativeControl(_ellipse);
                     break;
